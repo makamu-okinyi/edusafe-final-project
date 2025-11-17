@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Public Data Dashboard - Education Report Statistics | EduSafe Connect</title>
+    <meta name="title" content="Public Data Dashboard - Education Report Statistics | EduSafe Connect">
+    <meta name="description" content="View anonymous, aggregate statistics about education reports. See total reports, recent activity, resolved cases, and reports by category. Transparent public data dashboard.">
+    <meta name="keywords" content="education statistics, report dashboard, education data, report analytics, education metrics, public dashboard, education insights">
+    <meta name="author" content="EduSafe Connect">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://edusafeconnect.com/dashboard.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://edusafeconnect.com/dashboard.html">
+    <meta property="og:title" content="Public Data Dashboard - Education Report Statistics">
+    <meta property="og:description" content="View anonymous, aggregate statistics about education reports. Transparent public data dashboard.">
+    <meta property="og:image" content="https://edusafeconnect.com/og-image-dashboard.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://edusafeconnect.com/dashboard.html">
+    <meta property="twitter:title" content="Public Data Dashboard - Education Report Statistics">
+    <meta property="twitter:description" content="View anonymous, aggregate statistics about education reports.">
+    <meta property="twitter:image" content="https://edusafeconnect.com/og-image-dashboard.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Public Data Dashboard",
+      "description": "Anonymous, aggregate statistics about education reports",
+      "url": "https://edusafeconnect.com/dashboard.html",
+      "mainEntity": {
+        "@type": "Dataset",
+        "name": "Education Report Statistics",
+        "description": "Aggregate, anonymous data about education reports"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">EduSafe <span>Connect</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="report.html">File a Report</a>
+                <a href="track.html">Track a Report</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="forum.html">Solutions Hub</a>
+                <a href="help.html" style="color: #e74c3c; font-weight: bold;">Get Help Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Public Data Dashboard</h2>
+        <p style="text-align: center; margin-bottom: 2rem;">
+            An anonymous, high-level overview of reports and platform activity.
+        </p>
+
+        <div class="card-grid">
+            <div class="card" style="text-align: center;">
+                <h3 style="color: var(--primary-color);">Total Reports</h3>
+                <p id="stat-total-reports" style="font-size: 3rem; font-weight: 700; margin: 1rem 0;">...</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <h3 style="color: var(--accent-color-1);">Recent Reports</h3>
+                <p id="stat-recent-reports" style="font-size: 3rem; font-weight: 700; margin: 1rem 0;">...</p>
+                <small>(Last 30 Days)</small>
+            </div>
+            <div class="card" style="text-align: center;">
+                <h3 style="color: #27ae60;">Reports Resolved</h3>
+                <p id="stat-resolved-reports" style="font-size: 3rem; font-weight: 700; margin: 1rem 0;">...</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <h3 style="color: #f39c12;">Under Review</h3>
+                <p id="stat-in-review" style="font-size: 3rem; font-weight: 700; margin: 1rem 0;">...</p>
+            </div>
+        </div>
+
+        <div class="card" style="margin-top: 3rem;">
+            <h3>Reports by Category</h3>
+            <canvas id="category-chart"></canvas>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 EduSafe Connect. All Rights Reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

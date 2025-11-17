@@ -1,0 +1,17 @@
+{
+  "include": [
+    "edusafe_backend"
+  ],
+  "exclude": [
+    "**/__pycache__",
+    "**/node_modules"
+  ],
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false,
+  "pythonVersion": "3.8",
+  "typeCheckingMode": "basic",
+  "stubPath": "",
+  "venvPath": ".",
+  "venv": ".venv"
+}
+

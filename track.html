@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Track Your Report Status - EduSafe Connect</title>
+    <meta name="title" content="Track Your Report Status - EduSafe Connect">
+    <meta name="description" content="Track the status of your education report using your unique Case ID. View real-time updates on your report's progress through the review process.">
+    <meta name="keywords" content="track report, report status, case ID, report tracking, education report status, check report status">
+    <meta name="author" content="EduSafe Connect">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://edusafeconnect.com/track.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://edusafeconnect.com/track.html">
+    <meta property="og:title" content="Track Your Report Status - EduSafe Connect">
+    <meta property="og:description" content="Track the status of your education report using your unique Case ID. View real-time updates on your report's progress.">
+    <meta property="og:image" content="https://edusafeconnect.com/og-image-track.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://edusafeconnect.com/track.html">
+    <meta property="twitter:title" content="Track Your Report Status">
+    <meta property="twitter:description" content="Track the status of your education report using your unique Case ID.">
+    <meta property="twitter:image" content="https://edusafeconnect.com/og-image-track.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Track Your Report",
+      "description": "Track the status of your education report using your unique Case ID",
+      "url": "https://edusafeconnect.com/track.html"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">EduSafe <span>Connect</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="report.html">File a Report</a>
+                <a href="track.html" class="active">Track a Report</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="forum.html">Solutions Hub</a>
+                <a href="help.html" style="color: #e74c3c; font-weight: bold;">Get Help Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2 class="section-title">Track Your Report Status</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Enter the unique Case ID you received upon submission to view the current status of your report.</p>
+            
+            <form id="trackForm">
+                <div class="form-group">
+                    <label for="case-id">Your Unique Case ID</label>
+                    <input type="text" id="case-id" name="caseId" placeholder="e.g., ESC-2025-10-A8C1" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; font-size: 1.2rem;">Check Status</button>
+            </form>
+        </div>
+        
+        <div id="status-result" class="card hidden" style="margin-top: 3rem;">
+            <h3>Status for Case ID: <span id="result-case-id" style="color: var(--accent-color-1);"></span></h3>
+        
+            <div class="progress-tracker" id="status-progress-bar">
+                <div class="progress-tracker-step" data-status="Submitted">
+                    <div class="progress-tracker-step-icon">1</div>
+                    <div class="progress-tracker-step-label">Submitted</div>
+                </div>
+                <div class="progress-tracker-step" data-status="Under Review">
+                    <div class="progress-tracker-step-icon">2</div>
+                    <div class="progress-tracker-step-label">Under Review</div>
+                </div>
+                <div class="progress-tracker-step" data-status="Action in Progress">
+                    <div class="progress-tracker-step-icon">3</div>
+                    <div class="progress-tracker-step-label">Action in Progress</div>
+                </div>
+                <div class="progress-tracker-step" data-status="Resolved">
+                    <div class="progress-tracker-step-icon">4</div>
+                    <div class="progress-tracker-step-label">Resolved</div>
+                </div>
+                <div class="progress-tracker-step" data-status="Closed">
+                    <div class="progress-tracker-step-icon">5</div>
+                    <div class="progress-tracker-step-label">Closed</div>
+                </div>
+            </div>
+            <hr>
+            
+            <p id="result-details" style="font-size: 1rem; color: #555; text-align: center;"></p>
+            <button id="open-chat-btn" class="btn btn-secondary" style="margin-top: 1.5rem; display: none;">
+                View / Send Anonymous Messages
+            </button>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 EduSafe Connect. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
